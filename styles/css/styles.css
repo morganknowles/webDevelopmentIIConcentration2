@@ -1,0 +1,66 @@
+body {
+  padding: 0;
+  margin: 2% auto;
+  box-sizing: border-box;
+  background-color: #FFAE92; }
+
+header {
+  margin: auto;
+  padding: 1em 0.5em;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: #FFF; }
+
+.formArea {
+  margin: 2% auto;
+  width: 50%;
+  font-family: "Questrial", sans-serif;
+  color: #FFF;
+  text-size: 2.3em; }
+  .formArea input {
+    margin: 1% auto;
+    width: 90%;
+    display: block; }
+
+button {
+  padding: 10px;
+  display: block;
+  width: 50px;
+  margin: 5% auto; }
+
+.outer_card, .inner_card {
+  transition: transform 0.3s, background 0.3s; }
+
+.outer_card {
+  backface-visibility: visible;
+  margin: 0.3em;
+  float: left;
+  padding: 10px;
+  width: 143px;
+  height: 197px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.inner_card {
+  backface-visibility: hidden;
+  border: 5px solid black;
+  width: 90%;
+  height: auto;
+  background-color: rgba(230, 230, 230, 0.7);
+  font-size: 12em;
+  transform: rotateY(-180deg) scaleX(-1); }
+
+.outer_card.selected {
+  transform: rotateY(-180deg); }
+
+.selected > img {
+  transform: rotateY(0deg) scaleX(-1); }
+
+.matched {
+  transform: rotateY(-180deg); }
+  .matched > img {
+    transform: rotateY(0deg) scaleX(-1); }
+
+/*# sourceMappingURL=styles.css.map */
